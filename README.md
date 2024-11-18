@@ -16,6 +16,9 @@ pnpm build
 pnpm preview
 ```
 
+# File structure
+Used svelte.dev repo as reference: https://github.com/sveltejs/svelte/tree/svelte-4/sites/svelte.dev
+
 # Auth
 Auth based on this guide: https://supabase.com/docs/guides/auth/server-side/sveltekit
 
