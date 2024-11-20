@@ -1,13 +1,22 @@
+<script>
+	let {
+		title = 'Mocha Cafe',
+		description = 'Expreso',
+		price = '4.53'
+	} = $props();
+</script>
+
+
 <div class="bg-white rounded-lg shadow-sm">
 	<img
 		class="card-image rounded-lg"
 		src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
 		alt="Shoes" />
 	<div class="card-text-area">
-		<h2 class="card-text-title">Cafe Mocha</h2>
-		<p class="card-text-description">Expreso</p>
+		<h2 class="card-text-title">{title}</h2>
+		<p class="card-text-description">{description}</p>
 		<div class="flex justify-between">
-			<p class="card-text-price justify-self-start">4.53 $</p>
+			<p class="card-text-price justify-self-start">{price} $</p>
 			<button class="card-button rounded-lg justify-self-end">+</button>
 		</div>
 	</div>
