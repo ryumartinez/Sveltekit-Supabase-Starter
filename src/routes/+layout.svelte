@@ -1,15 +1,11 @@
 <script lang="ts">
 	import '../app.css';
-    import '../global-styles/tailwind-base.css';
     import { invalidate } from '$app/navigation'
     import { onMount } from 'svelte'
-    import Navbar from '../components/layout/navbar.svelte';
-    import BottomNavbar from '../components/layout/bottom-navbar.svelte';
 
-    let { children } = $props();
+    let { children, data } = $props();
 
-    export let data;
-    $: ({ session, supabase } = data);
+    const { session, supabase } = data
 
     onMount(() => {
         const { data } = supabase.auth.onAuthStateChange((_, newSession) => {
