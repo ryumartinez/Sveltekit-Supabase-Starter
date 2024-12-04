@@ -1,5 +1,6 @@
 <script>
 	let {
+		id = 0,
 		title = 'Mocha Cafe',
 		description = 'Expreso',
 		price = '4.53'
@@ -7,7 +8,7 @@
 </script>
 
 
-<div class="bg-white rounded-lg shadow-sm">
+<div class="bg-white rounded-lg shadow-sm relative">
 	<img
 		class="card-image rounded-lg"
 		src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -20,6 +21,7 @@
 			<button class="card-button rounded-lg justify-self-end">+</button>
 		</div>
 	</div>
+	<a href="/{id}" class="absolute top-0 bottom-0 left-0 z-10">details</a>
 </div>
 
 <style>
